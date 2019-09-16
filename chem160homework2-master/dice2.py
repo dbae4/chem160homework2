@@ -15,6 +15,7 @@ for n in range (10000):
         randomNum = random.choice(range(1,7))
         numbersP1.append(randomNum)
     numbersP1.sort(reverse = True)
+    numbersP1.count(2)
     p1Total = numbersP1[0] + numbersP1[1];
     # print(p1Total)
     # print(numbersP1)
@@ -45,4 +46,4 @@ print("Player 1 wins: " + str(player1win))
 print("Player 2 wins: " + str(player2win))
 print("Amount of draws: " + str(draws))
 
-#The game is still unfair as player 1 is still more likely to win with three dice regardless of set conditions for player 2
+#Setting the additonal rule of player 1 losing if he rolls two or more 2's still does not improve the fairness of the game
